@@ -1,191 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"/>
-<script>
-var asciiMessage = "Test";
-stringLength = asciiMessage.length;
-var n = false;
-var finalString = ""; 
-var stringLengthVarying = stringLength;
-//test
-
-            for (var i = stringLength; i > 0; i--) {
-                n = asciiMessage.indexOf("a", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100001";
-                } else {
-                    console.log("not a");
-                }
-                n = asciiMessage.indexOf("b", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100010";
-                } else {
-                    console.log("not b");
-                }
-                n = asciiMessage.indexOf("c", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100011";
-                } else {
-                    console.log("not c");
-                }
-                n = asciiMessage.indexOf("d", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100100";
-                } else {
-                    console.log("not d");
-                }
-                n = asciiMessage.indexOf("e", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100101";
-                } else {
-                    console.log("not e");
-                }
-                n = asciiMessage.indexOf("f", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100110";
-                } else {
-                    console.log("not f");
-                }
-                n = asciiMessage.indexOf("g", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100111";
-                } else {
-                    console.log("not g");
-                }
-                n = asciiMessage.indexOf("h", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100111";
-                } else {
-                    console.log("not h");
-                }
-                n = asciiMessage.indexOf("i", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100111";
-                } else {
-                    console.log("not i");
-                }
-                n = asciiMessage.indexOf("j", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01101010";
-                } else {
-                    console.log("not j");
-                }
-                n = asciiMessage.indexOf("k", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01101011";
-                } else {
-                    console.log("not k");
-                }
-                n = asciiMessage.indexOf("l", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01101011";
-                } else {
-                    console.log("not l");
-                }
-                n = asciiMessage.indexOf("m", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01101011";
-                } else {
-                    console.log("not m");
-                }
-                n = asciiMessage.indexOf("n", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01101011";
-                } else {
-                    console.log("not n");
-                }
-                n = asciiMessage.indexOf("o", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01101111";
-                } else {
-                    console.log("not o");
-                }
-                n = asciiMessage.indexOf("p", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110000";
-                } else {
-                    console.log("not p");
-                }
-                n = asciiMessage.indexOf("q", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110000";
-                } else {
-                    console.log("not q");
-                }
-                n = asciiMessage.indexOf("r", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01100001";
-                } else {
-                    console.log("not r");
-                }
-                n = asciiMessage.indexOf("s", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110011";
-                } else {
-                    console.log("not s");
-                }
-                n = asciiMessage.indexOf("t", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110011";
-                } else {
-                    console.log("not t");
-                }
-                n = asciiMessage.indexOf("u", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110101";
-                } else {
-                    console.log("not u");
-                }
-                n = asciiMessage.indexOf("v", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110110";
-                } else {
-                    console.log("not v");
-                }
-                n = asciiMessage.indexOf("w", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01110110";
-                } else {
-                    console.log("not w");
-                }
-                n = asciiMessage.indexOf("x", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01111000";
-                } else {
-                    console.log("not x");
-                }
-                n = asciiMessage.indexOf("y", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01111001";
-                } else {
-                    console.log("not y");
-                }
-                n = asciiMessage.indexOf("z", i);
-                if (n == true) {
-                    finalString = finalString + " " + "01111010";
-                } else {
-                    console.log("not z");
-                }
-                n = asciiMessage.indexOf(" ", i);
-                if (n == true) {
-                    finalString = finalString + " " + "00100000";
-                } else {
-                    console.log("not space");
-                }
-
-                stringLengthVarying = stringLengthVarying - 1;
-                asciiMessage = asciiMessage.slice(0, stringLengthVarying);
-                console.log(finalString);
-
-            }
-            console.log(finalString);
+<head>
+<link rel = "stylesheet" href = ".\asciiToBinary.css">    
+<meta charset="utf-8"/>
 
 
-</script>
 </head>
 
 <body>
+<div id="Original_message">_</div>
+<div id="Binary_message">_</div>
+
+<script src = ".\newjavascript.js">
+
+</script>
+    
+    
 </body>
 
-<html>
+</html>
 
